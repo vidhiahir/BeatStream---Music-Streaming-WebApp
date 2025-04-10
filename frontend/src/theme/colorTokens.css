@@ -1,0 +1,17 @@
+.light{
+  /* 1-darkest */
+  --bg: #f2f0ef;
+  /* --bg-1:#bf00ff; */
+  --bg-2:#ab6ac9;
+  /* --bg-hover:#d8a1fa; */
+  --bg-hover:#d5a5e4;
+  --text-color:#1d1c1c;
+}
+
+.dark{
+  --bg: #1d1c1c;
+  /* --bg-1:#2e2c2c; */
+  --bg-2:#565555;
+  --bg-hover:#7c7676;
+  --text-color:#f2f0ef;
+}
