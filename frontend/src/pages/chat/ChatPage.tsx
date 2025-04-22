@@ -68,8 +68,10 @@ const ChatPage = () => {
 													${message.senderId === user?.id ? "bg-purple-500" : "bg-[var(--bg)]"}
 												`}
                       >
-                        <p className="text-sm">{message.content}</p>
-                        <span className="text-xs text-[var(--text-color)] mt-1 block">
+                        <p className={`text-sm ${message.senderId === user?.id ? "text-white" : "text-[var(--text-color)]"}`}>
+                          {message.content}
+                        </p>
+                        <span className={`text-[10px] mt-1 block ${message.senderId === user?.id ? "text-gray-300" : "text-gray-500"}`}>
                           {formatTime(message.createdAt)}
                         </span>
                       </div>

@@ -21,7 +21,7 @@ const LeftSidebar = () => {
   return (
     <div className="h-full flex flex-col gap-2">
       {/* Navigation menu */}
-      <div className="rounded-lg bg-var[(--bg-2)] p-4 ">
+      <div className="rounded-lg bg-var[(--bg)] p-4 ">
         <div className="space-y-2 ">
           <Link
             to={"/"}
@@ -56,7 +56,7 @@ const LeftSidebar = () => {
       </div>
 
       {/* playlists */}
-      <div className="flex-1 rounded-lg bg-var[(--bg-2)] p-4">
+      <div className="flex-1 rounded-lg bg-var[(--bg)] p-4">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center text-[var(--text-color)] ] px-2">
             <Library className="size-5 mr-2 " />

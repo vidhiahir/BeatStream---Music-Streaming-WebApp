@@ -51,10 +51,10 @@ const PlaybackControls = () => {
   };
 
   return (
-    <footer className="h-20 sm:h-24 bg-var[(--bg-2)] border-t border-[var(--bg)] px-4">
+    <footer className="h-20 sm:h-24 bg-[var(--bg-2)] border-t border-[var(--bg)] px-4">
       <div className="flex justify-between items-center h-full max-w-[1800px] mx-auto">
         {/* currently playing song */}
-        <div className="hidden sm:flex items-center gap-4 min-w-[180px] w-[30%]">
+        <div className="hidden sm:flex items-center gap-4 min-w-[180px] w-[30%] text-[var(--text-color-inverse)]">
           {currentSong && (
             <>
               <img
@@ -66,7 +66,7 @@ const PlaybackControls = () => {
                 <div className="font-medium truncate hover:underline cursor-pointer">
                   {currentSong.title}
                 </div>
-                <div className="text-sm text-[var(--text-color)] truncate hover:underline cursor-pointer">
+                <div className="text-sm truncate hover:underline cursor-pointer">
                   {currentSong.artist}
                 </div>
               </div>

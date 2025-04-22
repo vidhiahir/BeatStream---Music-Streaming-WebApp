@@ -24,10 +24,10 @@ const MainLayout = () => {
   }, []);
 
   return (
-    <div className="h-screen bg-[var(--bg-2)] text-[var(--text-color)] flex flex-col">
+    <div className="h-screen bg-[var(--bg)] text-[var(--text-color)] flex flex-col">
       <ResizablePanelGroup
         direction="horizontal"
-        className="flex-1 flex h-full overflow-hidden p-2"
+        className="flex-1 flex h-full overflow-hidden"
       >
         <AudioPlayer />
         {/* left sidebar * */}

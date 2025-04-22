@@ -14,8 +14,8 @@ const FriendsActivity = () => {
   }, [fetchUsers, user]);
 
   return (
-    <div className="h-full bg-var[(--bg-2)] rounded-lg flex flex-col">
-      <div className="p-4 flex justify-between items-center border-b border-[var(--bg)]">
+    <div className="h-full bg-[var(--bg)] rounded-lg flex flex-col">
+      <div className="p-4 flex justify-between items-center border-b border-[var(--bg-2)]">
         <div className="flex items-center gap-2">
           <Users className="size-5 shrink-0" />
           <h2 className="font-semibold">What they're listening to</h2>
@@ -33,18 +33,18 @@ const FriendsActivity = () => {
             return (
               <div
                 key={user._id}
-                className="cursor-pointer hover:bg-[var(--bg-hover)]/50 p-3 rounded-md transition-colors group"
+                className="cursor-pointer hover:bg-[var(--bg-2)] p-3 rounded-md transition-colors group"
               >
                 <div className="flex items-start gap-3">
                   <div className="relative">
-                    <Avatar className="size-10 border border-[var(--bg)]">
+                    <Avatar className="size-10 border border-[var(--bg-2)]">
                       <AvatarImage src={user.imageUrl} alt={user.fullName} />
                       <AvatarFallback>{user.fullName[0]}</AvatarFallback>
                     </Avatar>
                     <div
-                      className={`absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-zinc-900 
-												${onlineUsers.has(user.clerkId) ? "bg-purple-500" : "bg-[var(--bg-2)]"}
-												`}
+                      className={`absolute bottom-0 right-0 h-3 w-3 rounded-full  ${
+                        onlineUsers.has(user.clerkId) ? "bg-green-700" : "bg-gray-400"
+                      }`}
                       aria-hidden="true"
                     />
                   </div>
@@ -93,7 +93,7 @@ const LoginPrompt = () => (
        opacity-75 animate-pulse"
         aria-hidden="true"
       />
-      <div className="relative bg-var[(--bg-2)] rounded-full p-4">
+      <div className="relative bg-[var(--bg)] rounded-full p-4">
         <HeadphonesIcon className="size-8 text-emerald-400" />
       </div>
     </div>

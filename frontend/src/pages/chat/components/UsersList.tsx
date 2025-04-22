@@ -34,12 +34,8 @@ const UsersList = () => {
                     </Avatar>
                     {/* online indicator */}
                     <div
-                      className={`absolute bottom-0 right-0 h-3 w-3 rounded-full ring-2 ring-zinc-900
-                        ${
-                          onlineUsers.has(user.clerkId)
-                            ? "bg-purple-500"
-                            : "bg-[var(--bg-2)]"
-                        }`}
+                      className={`absolute bottom-0 right-0 h-3 w-3 rounded-full 
+                        ${onlineUsers.has(user.clerkId) ? "bg-green-700" : "bg-gray-400"}`}
                     />
                   </div>
 

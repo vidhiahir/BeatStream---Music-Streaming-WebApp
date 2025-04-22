@@ -1,17 +1,25 @@
 .light{
-  /* 1-darkest */
-  --bg: #f2f0ef;
-  /* --bg-1:#bf00ff; */
-  --bg-2:#ab6ac9;
-  /* --bg-hover:#d8a1fa; */
-  --bg-hover:#d5a5e4;
-  --text-color:#1d1c1c;
+  /* Main theme colors */
+  --bg: #ffffff;  /* White for main content */
+  --bg-2: #ab6ac9;  /* Light purple for header and player */
+  --bg-hover: #ab6ac9;  /* Same as bg-2 for hover states */
+  --text-color: #1d1c1c;  /* Black text for main content */
+  --text-color-inverse: #ffffff;  /* White text for header and player */
+  
+  /* Scroll bar colors */
+  --scroll-thumb: #ab6ac9;  /* Purple scroll thumb */
+  --scroll-track: #f2f0ef;  /* Light grey scroll track */
 }
 
 .dark{
-  --bg: #1d1c1c;
-  /* --bg-1:#2e2c2c; */
-  --bg-2:#565555;
-  --bg-hover:#7c7676;
-  --text-color:#f2f0ef;
+  /* Main theme colors */
+  --bg: #1d1c1c;  /* Dark blackish for main content */
+  --bg-2: #2e2c2c;  /* Light blackish for header and player */
+  --bg-hover: #2e2c2c;  /* Same as bg-2 for hover states */
+  --text-color: #f2f0ef;  /* White text for main content */
+  --text-color-inverse: #f2f0ef;  /* White text for header and player */
+  
+  /* Scroll bar colors */
+  --scroll-thumb: #ab6ac9;  /* Purple scroll thumb */
+  --scroll-track: #1d1c1c;  /* Dark grey scroll track */
 }

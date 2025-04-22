@@ -14,7 +14,7 @@ const Topbar = () => {
     <div className="flex items-center justify-between p-4 sticky top-0 bg-[var(--bg-2)] backdrop-blur-md z-10">
       <div className="flex gap-2 items-center">
         <img src="/beatstream.png" className="size-8" alt="logo" />
-        BeatStream
+        <span className="text-[var(--text-color-inverse)] font-bold text-xl tracking-tight">BeatStream</span>
       </div>
       <div className="flex items-center gap-4">
         <ModeToggle />
